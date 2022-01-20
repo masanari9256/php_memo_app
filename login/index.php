@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
   <?php
-    include_once "../common/header.php";
-    echo getHeader("ログイン");
+  include_once "../common/header.php";
+  echo getHeader("ログイン");
   ?>
   <body>
     <div class="d-flex align-items-center justify-content-center h-100">

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
   <?php
-    include_once "../common/header.php";
-    echo getHeader("メモ投稿");
+  include_once "../common/header.php";
+  echo getHeader("メモ投稿");
   ?>
   <body class="bg-white">
     <div class="h-100">
