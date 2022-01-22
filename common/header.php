@@ -4,8 +4,7 @@
  * @param $title
  * @return string
  */
-function getHeader($title)
-{
+function getHeader($title) {
   return <<<EOF
     <head>
       <meta charset="utf-8" />
@@ -17,7 +16,6 @@ function getHeader($title)
 EOF;
 }
 
-function getDatabaseConnection()
-{
+function getDatabaseConnection() {
 
 }
