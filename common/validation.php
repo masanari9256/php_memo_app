@@ -62,6 +62,12 @@ function halfAlphanumericCheck(&$errors, $check_value, $message) {
   }
 }
 
+/**
+ * メアド重複チェック
+ * @param $errors
+ * @param $check_value
+ * @param $message
+ */
 function mailAddressDuplicationCheck(&$errors, $check_value, $message) {
   $database_handler = getDatabaseConnection();
   if($statement = $database_handler->prepare(
