@@ -9,6 +9,7 @@ $user_password = $_POST['user_password'];
 
 $_SESSION['errors'] = [];
 
+// バリデーションチェック
 // 空チェック
 emptyCheck($_SESSION['errors'], $user_name, 'ユーザー名を入力してください。');
 emptyCheck($_SESSION['errors'], $user_email, 'メールアドレスを入力してください。');
@@ -49,6 +50,11 @@ try {
     $statement->bindParam(':email', $user_email);
     $statement->bindParam(':password', $password);
     $statement->execute();
+  
+    $_SESSION['user'] = [
+      'name' => $user_name,
+      'id' => $database_handler->lastInsertId()
+    ];
   }
 } catch(Throwable $e) {
   echo $e->getMessage();
