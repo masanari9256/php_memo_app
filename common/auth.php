@@ -9,7 +9,7 @@ if(!isset($_SESSION)) {
  * @return bool
  */
 function isLogin() {
-  if($_SESSION['user']) {
+  if(isset($_SESSION['user'])) {
     return true;
   }
   return false;
