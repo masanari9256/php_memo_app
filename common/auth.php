@@ -8,7 +8,7 @@ if(!isset($_SESSION)) {
  * ログインしているかチェックする
  * @return bool
  */
-function isLogin() {
+function isLogin(): bool {
   if(isset($_SESSION['user'])) {
     return true;
   }
