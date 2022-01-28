@@ -88,7 +88,7 @@ echo getHeader("メモ投稿");
         <form class="w-100 h-100" method="post">
           <input type="hidden" name="edit_id" value="<?php echo $edit_id; ?>"/>
           <div id="memo-menu">
-            <button type="submit" class="btn btn-danger" formaction=""><i class="fas fa-trash-alt"></i></button>
+            <button type="submit" class="btn btn-danger" formaction="./action/update.php"><i class="fas fa-trash-alt"></i></button>
             <button type="submit" class="btn btn-success" formaction=""><i class="fas fa-save"></i></button>
           </div>
           <input type="text" id="memo-title" name="edit_title"
